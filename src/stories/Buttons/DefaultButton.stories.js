@@ -1,7 +1,7 @@
-import InvertedButton from '../components/design-components/InvertedButton';
+import InvertedButton from '../../components/design-components/InvertedButton';
 
 export default {
-    title: 'Inverted Button',
+    title: 'Design System/Buttons/Defualt Button',
     component: InvertedButton,
     argTypes: {
         theme: "light",
@@ -30,8 +30,8 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Light = Template.bind({});
-export const Dark = Template.bind({});
 export const LightDanger = Template.bind({});
+export const Dark = Template.bind({});
 export const DarkDanger = Template.bind({});
 
 /////////////////////////////////////////////////////////

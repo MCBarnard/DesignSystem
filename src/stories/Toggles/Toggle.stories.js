@@ -1,7 +1,7 @@
-import Toggle from '../components/design-components/Toggle.vue';
+import Toggle from '../../components/design-components/Toggle.vue';
 
 export default {
-    title: 'Toggle',
+    title: 'Design System/Toggles/Toggle',
     component: Toggle,
     argTypes: {
         theme: "light",
