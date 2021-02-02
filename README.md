@@ -14,3 +14,11 @@ npm run storybook
 ```
 npm run build
 ```
+
+### Push to production
+```
+git push heroku main
+```
+
+# Demo
+Visit https://thinus-design-portfolio.herokuapp.com/
