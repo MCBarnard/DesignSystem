@@ -1,8 +1,8 @@
-import InvertedButton from '../../components/design-components/DefaultButton';
+import InputField from '../../components/design-components/InputField';
 
 export default {
-    title: 'Design System/Buttons/Defualt Button',
-    component: InvertedButton,
+    title: 'Design System/Inputs/Input Fields',
+    component: InputField,
     argTypes: {
         theme: "light",
         active: true,
@@ -25,8 +25,8 @@ export default {
 
 const Template = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
-    components: { InvertedButton },
-    template: '<InvertedButton v-bind="$props"> <template v-slot:content>X</template> </InvertedButton>',
+    components: { InputField },
+    template: '<InputField v-bind="$props"> <template v-slot:content>X</template> </InputField>',
 });
 
 export const Light = Template.bind({});
@@ -36,23 +36,13 @@ export const Dark = Template.bind({});
 // Props
 Light.args = {
     theme: "light",
-    active: true,
-    variant: "",
+    label: "Username",
+    value: "",
 };
 Dark.args = {
     theme: "dark",
-    variant: "",
-    active: true,
-};
-LightDanger.args = {
-    theme: "light",
-    active: true,
-    variant: "danger",
-};
-DarkDanger.args = {
-    theme: "dark",
-    variant: "danger",
-    active: true,
+    label: "Username",
+    value: "",
 };
 //////////////////////////////////////////////////////
 // Backgrounds
@@ -60,12 +50,6 @@ Light.parameters = {
     backgrounds: { default: 'Light' }
 };
 Dark.parameters = {
-    backgrounds: { default: 'Dark' }
-};
-LightDanger.parameters = {
-    backgrounds: { default: 'Light' }
-};
-DarkDanger.parameters = {
     backgrounds: { default: 'Dark' }
 };
 

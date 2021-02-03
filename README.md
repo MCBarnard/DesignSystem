@@ -17,6 +17,7 @@ npm run build
 
 ### Push to production
 ```
+yarn build-storybook -o ./public
 git push heroku main
 ```
 
